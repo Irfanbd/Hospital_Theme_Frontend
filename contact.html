@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@0,200;0,700;1,100;1,300;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,700&family=Titillium+Web:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hospital</title>
+</head>
+
+<body>
+    <!--Section-->
+    <Section class="sub-header-contact">
+        <nav>
+            <a href="index.html"><img src="Images/logo4.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <!--onclick="hideMenu()" for click event-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="department.html">Departments</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+
+                </ul>
+            </div>
+            <i class="fa fa-ellipsis-v" onclick="showMenu()"></i>
+        </nav>
+        <h1>The Power to Heal</h1>
+    </Section>
+
+    <!--Google Map-->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117658.98533125607!2d89.46246130994588!3d22.845286583075307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2sKhulna!5e0!3m2!1sen!2sbd!4v1640290555819!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!--Contact Us-->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, WER Building</h5>
+                        <p>Khulna,Bangladesh</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+8801711-111222</h5>
+                        <p>24 Hours Services</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>info@hospital.com</h5>
+                        <p>Email Us for any kind of information</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Query" required>
+                    <textarea name="message" rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn-blog">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur, vero repellendus, nobis
+            explicabo beatae deleniti inventore totam tempore maxime quaerat quas error mollitia voluptates? inventore
+            totam tempore maxime quaerat quas<br>Lorem
+            ipsum
+            dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur, vero repellendus, nobis
+            explicabo beatae deleniti inventore totam tempore maxime quaerat quas error mollitia voluptates?</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+
+
+        </div>
+        <p>Copyright @Ahmed Irfan Sayed</p>
+    </section>
+
+
+    <!-- Javascript For Click Events-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

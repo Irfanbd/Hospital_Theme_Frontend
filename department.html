@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@0,200;0,700;1,100;1,300;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@1,700&family=Titillium+Web:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hospital</title>
+</head>
+
+<body>
+    <!--Section-->
+    <Section class="sub-header-dep">
+        <nav>
+            <a href="index.html"><img src="Images/logo4.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <!--onclick="hideMenu()" for click event-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="department.html">Departments</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+
+                </ul>
+            </div>
+            <i class="fa fa-ellipsis-v" onclick="showMenu()"></i>
+        </nav>
+        <h1>The Power to Heal</h1>
+    </Section>
+
+    <!--Departments-->
+    <section class="department">
+        <h1>Health Care We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, earum?</p>
+
+
+        <div class="row">
+            <div class="dep-col">
+                <h3>Consultation</h3>
+                <p>Consultation is the act of seeking assistance from another physician(s) or health care
+                    professional(s) for diagnostic studies, therapeutic interventions, or other services that may
+                    benefit the patient.</p>
+            </div>
+            <div class="dep-col">
+                <h3>Health education</h3>
+                <p>Hospital health education involves the entire work of a hospital. and encompasses as many different
+                    facets of education as there are jobs.</p>
+            </div>
+            <div class="dep-col">
+                <h3>Counseling </h3>
+                <p>Say uncle Wesley had just survived a heart attack and is ready to go home. Rochelle, the hospital
+                    counselor, tells him that exercise is one of the activities he should do to recover. Then she gives
+                    him the names of different health clubs in his community that he could join. She would also educate
+                    his family on these benefits as well.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--FACILITIES-->
+    <section class="facilities">
+        <h1>Health Facilities</h1>
+        <p>Many people don’t think twice about these facilities unless they need them. But healthcare is a hot career
+            destination for many, and it’s good to know more about the facilities you may end up working in if you
+            choose to pursue a healthcare career. So let’s take a closer look at some of the most common settings you
+            may work in as a healthcare professional.</p>
+        <div class="row">
+            <div class="faci-col">
+                <img src="images/health2.jpg" width="502px" height="702px" alt="">
+                <div class="layer">
+                    <h3>Birth Center</h3>
+                </div>
+            </div>
+            <div class="faci-col">
+                <img src="images/health3.jpg" width="502px" height="702px" alt="">
+                <div class="layer">
+                    <h3>Blood Banks</h3>
+                </div>
+            </div>
+            <div class="faci-col">
+                <img src="images/health4.jpg" width="502px" height="702px" alt="">
+                <div class="layer">
+                    <h3>Dialysis Centers</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur, vero repellendus, nobis
+            explicabo beatae deleniti inventore totam tempore maxime quaerat quas error mollitia voluptates? inventore
+            totam tempore maxime quaerat quas<br>Lorem
+            ipsum
+            dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur, vero repellendus, nobis
+            explicabo beatae deleniti inventore totam tempore maxime quaerat quas error mollitia voluptates?</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+
+
+        </div>
+        <p>Copyright @Ahmed Irfan Sayed</p>
+    </section>
+
+
+    <!-- Javascript For Click Events-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
